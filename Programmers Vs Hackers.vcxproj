@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c6bedb1f-3627-406a-b3df-f53d249208ee}</ProjectGuid>
+    <RootNamespace>ProgrammersVsHackers</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>.\SFML\include;C:\Program Files\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>.\SFML\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Program Files\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="BulletA.cpp" />
+    <ClCompile Include="BulletB.cpp" />
+    <ClCompile Include="BulletC.cpp" />
+    <ClCompile Include="BulletD.cpp" />
+    <ClCompile Include="ButtonBrian.cpp" />
+    <ClCompile Include="ButtonCashSale.cpp" />
+    <ClCompile Include="ButtonKloster.cpp" />
+    <ClCompile Include="ButtonMaxiSar.cpp" />
+    <ClCompile Include="ButtonMaxiWenner.cpp" />
+    <ClCompile Include="ButtonUpgrade.cpp" />
+    <ClCompile Include="FileLevel.cpp" />
+    <ClCompile Include="HackerBoss.cpp" />
+    <ClCompile Include="HackerDios.cpp" />
+    <ClCompile Include="HackerJunior.cpp" />
+    <ClCompile Include="HackerSemiSr.cpp" />
+    <ClCompile Include="Level2.cpp" />
+    <ClCompile Include="Level3.cpp" />
+    <ClCompile Include="Level4.cpp" />
+    <ClCompile Include="Level5.cpp" />
+    <ClCompile Include="LevelClicks.cpp" />
+    <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="Hacker.cpp" />
+    <ClCompile Include="HackerTrainee.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="Level1.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuHome.cpp" />
+    <ClCompile Include="MenuInfo.cpp" />
+    <ClCompile Include="MenuLevels.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="TowerMenu3.cpp" />
+    <ClCompile Include="MenuAbstract.cpp" />
+    <ClCompile Include="Spot.cpp" />
+    <ClCompile Include="Tower.cpp" />
+    <ClCompile Include="TowerMenu.cpp" />
+    <ClCompile Include="TowerMenu1.cpp" />
+    <ClCompile Include="TowerBrian.cpp" />
+    <ClCompile Include="TowerMenu2.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="TowerSarF.cpp" />
+    <ClCompile Include="TowerKloster.cpp" />
+    <ClCompile Include="TowerWenner.cpp" />
+    <ClCompile Include="UI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="BulletA.h" />
+    <ClInclude Include="BulletB.h" />
+    <ClInclude Include="BulletC.h" />
+    <ClInclude Include="BulletD.h" />
+    <ClInclude Include="ButtonBrian.h" />
+    <ClInclude Include="ButtonCashSale.h" />
+    <ClInclude Include="ButtonKloster.h" />
+    <ClInclude Include="ButtonMaxiSar.h" />
+    <ClInclude Include="ButtonMaxiWenner.h" />
+    <ClInclude Include="ButtonUpgrade.h" />
+    <ClInclude Include="FileLevel.h" />
+    <ClInclude Include="HackerBoss.h" />
+    <ClInclude Include="HackerDios.h" />
+    <ClInclude Include="HackerJunior.h" />
+    <ClInclude Include="HackerSemiSr.h" />
+    <ClInclude Include="Level2.h" />
+    <ClInclude Include="Level3.h" />
+    <ClInclude Include="Level4.h" />
+    <ClInclude Include="Level5.h" />
+    <ClInclude Include="Manager.h" />
+    <ClInclude Include="Hacker.h" />
+    <ClInclude Include="HackerTrainee.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="Level1.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MenuHome.h" />
+    <ClInclude Include="MenuInfo.h" />
+    <ClInclude Include="MenuLevels.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="TowerMenu3.h" />
+    <ClInclude Include="MenuAbstract.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Spot.h" />
+    <ClInclude Include="Tower.h" />
+    <ClInclude Include="TowerMenu.h" />
+    <ClInclude Include="TowerMenu1.h" />
+    <ClInclude Include="TowerBrian.h" />
+    <ClInclude Include="TowerMenu2.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="TowerSarF.h" />
+    <ClInclude Include="TowerKloster.h" />
+    <ClInclude Include="TowerWenner.h" />
+    <ClInclude Include="UI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Programmers Vs Hackers.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
